@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import minhaFoto from './assets/minha-foto.jpeg'
+import minhaFoto from './src/assets/minha-foto.jpeg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function App() {
