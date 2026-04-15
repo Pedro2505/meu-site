@@ -24,4 +24,7 @@ Para este projeto, foquei em uma stack moderna, leve e totalmente responsiva:
 - **Fundo Minimalista:** Optei por um visual limpo para que o foco seja total nos projetos e informações.
 - **Botão de WhatsApp:** Integração direta para facilitar o networking.
 
+
+ `🔗 [Acesse meu site aqui](https://vercel.com/pedro2505s-projects/meu-site)`
+
 ---
