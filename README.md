@@ -1,16 +1,27 @@
-# React + Vite
+# 🚀 Meu Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá! Este é o repositório do meu portfólio pessoal. Aqui apresento meus projetos, minhas habilidades técnicas e um pouco da minha jornada como desenvolvedor focado em **Dados e Back-end** (mas que não tem medo de colocar a mão no Front-end).
 
-Currently, two official plugins are available:
+O objetivo deste site é centralizar minhas experiências e facilitar o contato para novas oportunidades e parcerias.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ O que usei para construir:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Para este projeto, foquei em uma stack moderna, leve e totalmente responsiva:
 
-## Expanding the ESLint configuration
+* **React + Vite:** Para uma performance ultra-rápida.
+* **Bootstrap 5:** Estrutura e layout fluido.
+* **CSS Customizado:** Efeitos de Glassmorphism (vidro), animações flutuantes e modo ultra-minimalista.
+* **Font Awesome:** Ícones sociais e técnicos.
+* **Vercel:** Hospedagem e Deploy contínuo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📱 Destaques do Projeto
+
+- **Design Responsivo:** O site se adapta perfeitamente de monitores ultrawide até a tela do seu celular.
+- **Fundo Minimalista:** Optei por um visual limpo para que o foco seja total nos projetos e informações.
+- **Botão de WhatsApp:** Integração direta para facilitar o networking.
+
+---
