@@ -1,0 +1,15 @@
+/* Removemos as margens padrão do navegador e do Vite */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* Esta é a magia para os botões deslizarem suavemente! */
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}

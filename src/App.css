@@ -1,0 +1,177 @@
+/* --- O EFEITO DE FUNDO FLUTUANTE --- */
+.area-flutuante {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: 0; /* Fica no fundão da página */
+}
+
+.area-flutuante li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Quadrados quase transparentes */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  animation: subir 25s linear infinite; /* A animação que criamos abaixo */
+  bottom: -150px; /* Começam escondidos lá embaixo */
+  backdrop-filter: blur(2px); /* Efeito de vidro */
+}
+
+/* Tamanhos, posições e velocidades diferentes para não ficar robótico */
+.area-flutuante li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+.area-flutuante li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+.area-flutuante li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+.area-flutuante li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+.area-flutuante li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+.area-flutuante li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+.area-flutuante li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+.area-flutuante li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+.area-flutuante li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+.area-flutuante li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+/* O roteiro da animação: Sobe, gira e vira uma bola */
+@keyframes subir {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; border-radius: 0; }
+  100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%; }
+}
+/* Fundo animado moderno */
+.fundo-animado {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #121212);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  position : relative;
+  z-index : 1;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Efeito flutuante para a sua foto */
+.foto-perfil {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-perfil:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.4) !important;
+}
+
+/* Melhorar os botões */
+.btn-custom {
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Container estilo pílula de vidro (Glassmorphism) */
+.redes-sociais-centro {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+.icon-rede {
+  color : rgba(255, 255, 255, 0.7);
+  font-size : 2.2rem;
+  transition : all 0.3s ease;
+  margin: 0 75px;
+
+}
+.icon-rede:hover {
+  color : #0d6efd;
+  transform : translateY(-5px); 
+}
+/* O visual base do Card */
+.card-projeto {
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.03) !important; /* Fundo quase transparente */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 15px; /* Bordas mais redondinhas */
+}
+
+/* O que acontece quando passamos o mouse no Card */
+.card-projeto:hover {
+  transform: translateY(-10px); /* Flutua para cima */
+  border-color: rgba(13, 110, 253, 0.5) !important; /* Borda fica azul */
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15) !important; /* Brilho azul no fundo */
+}
+
+/* As etiquetas de Tecnologia */
+.badge-tech {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #4da3ff; /* Azul clarinho */
+  border: 1px solid rgba(13, 110, 253, 0.3);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 0 5px 10px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Secção de Projetos - Ultra Minimalista */
+#projetos {
+  position: relative;
+  
+  /* Um gradiente super suave que vai do preto profundo no topo, 
+     passa por um azul "meia-noite" bem escuro no meio, 
+     e volta para o preto no final */
+  background: linear-gradient(to bottom, #0b0f19 0%, #111a2e 50%, #0b0f19 100%);
+  
+  z-index: 1;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  /* ---> ADICIONAR ESTA LINHA <--- */
+  flex-wrap: wrap; /* Se a tela for pequena, os ícones pulam para a linha de baixo */
+}
+/* ========================================= */
+/* MODO SMARTPHONE (Regras de Responsividade)*/
+/* ========================================= */
+@media (max-width: 768px) {
+  
+  /* 1. Diminui a foto de perfil */
+  .foto-perfil {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  /* 2. Diminui o texto principal (display-3) */
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+
+  /* 3. Ajusta o tamanho e espaçamento dos botões principais */
+  .btn-lg {
+    display: block; /* Faz os botões ficarem um embaixo do outro */
+    width: 100%;
+    margin: 10px 0 !important; /* Espaço entre eles */
+  }
+
+  /* 4. Diminui os ícones de redes sociais e skills */
+  .icone-rede, .skill-icon {
+    font-size: 1.8rem;
+  }
+  
+  /* 5. Ajusta o container das redes sociais para mobile */
+  .redes-sociais-centro {
+    gap: 20px;
+    margin-top: 15px;
+  }
+}
